@@ -1,0 +1,5 @@
+Network Size
+If blockchains are small, that is if they are not spread across thousands of nodes around the globe, they could be vulnerable and a smart cracker could have your data. To rip the full benefit of the technology a large number of nodes, users are required.
+
+Transaction Costs, network speed
+Bitcoin, one of the success stories of the blockchain, can only handle about 7 transactions per second, each incurring a cost of about $0.20 and can store only 80 bytes of data.

@@ -1,0 +1,2 @@
+Human Error
+Even if blockchain is perfected, if it is completely secure, if the speed of transaction increases, if the storage capacity increases and if more and more people agree to use the platform, there is one thing that can never be eliminated, human error. After all, blockchain is just a technology that works on data and helps manage it, if the data is fed wrong, it can’t determine the validity of the data in a certain way, thus ends up managing wrong data. The data fed should be high quality, clear, precise and correct.

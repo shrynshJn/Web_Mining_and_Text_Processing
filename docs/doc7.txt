@@ -1,0 +1,2 @@
+Slow
+Due to the complexity of the system, and the distributed system blockchain transactions can be ridiculously slow, as it traverses across the globe finding the right node to write/read the data. Bitcoin transactions could take several hours to finalize as compared to the current technology of e-wallets, debit/credit cards, which can make the same happen almost instantly. The lack of speed coupled with the complexity to use the technology makes it difficult for the end users to understand and engage in the same.

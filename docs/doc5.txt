@@ -1,0 +1,2 @@
+Environmental costs
+The blockchain mainstreams encryption and relies on it to provide security and to establish a consensus over a distributed ledger. Thus to check for the validity and permissions of a particular user, complex algorithms are run, which consumes a large amount of computing power. This computing power drenches electricity in large amount. It is estimated that bitcoin required as much as energy as about 159 countries to keep the network up and running.

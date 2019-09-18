@@ -1,0 +1,5 @@
+Issues and Limitations
+As the technology is nascent, it has quite a number of limitations and issues with it, that needs to be resolved. Researchers are always working on eliminating any possible issues in the blockchain.
+
+Complexity
+The blockchain is new, it is huge and it is spread across million nodes around the globe. It is completely different than what we used to do before, and bring cryptography in the limelight rather than using it just a tool in something bigger. Understanding the new concept is hard and then to adopt it and abandon whatever we were doing up till now is harder. Complexity in the system also makes it difficult for the technology to attract programmers.

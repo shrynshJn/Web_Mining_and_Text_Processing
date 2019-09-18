@@ -1,0 +1,2 @@
+The unavoidable security flaw
+Even though blockchain is more secure against crackers, there is one avoidable security flaw. If more than 50% of the users, nodes feed false information, i.e. tell a lie, the lie becomes the truth for the system. And could give tremendous power to the one who influenced such a huge part of the network, this is called 51% attack. The only way to resolve this till now is by keeping a keen eye on the users.
