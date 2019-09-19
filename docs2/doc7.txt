@@ -1,2 +1,1 @@
-Slow
-Due to the complexity of the system, and the distributed system blockchain transactions
+to the complexity blockchain

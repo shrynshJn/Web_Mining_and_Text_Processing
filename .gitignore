@@ -1,3 +1,4 @@
 docs2
-try.py
-lsi.py
+docs2/*
+./try.py
+./lsi.py

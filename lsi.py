@@ -1,8 +1,10 @@
-import numpy as np 
-import  numpy.linalg as linAlgs
+import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import math
+import  numpy.linalg as linAlgs
+import numpy as np 
+import math 
+from svd import SVD
 
 stop_words = set(stopwords.words('english')) # define a set of stopwords
 punctuations = set([',', '.', '`', ':', '?', ';'])
@@ -22,47 +24,32 @@ words_list = set() # will store all the words in our document collection, bag of
 for i in range(10):
     words_list = words_list.union(set(docs[i])) 
 
-query = [term.lower() for term in input("Enter query string: ").split(' ')]
-words_list = words_list.union(set(query))
+query = [word.lower() for word in input("Enter query string: ").split(' ') if word not in stop_words]
+words_list.union(set(query))
 
+words_list = list(words_list)
+words_list.sort()
 term_freq = []
 query_freq = []
+
 for word in words_list:
-    word_freq = []
-    for i in range(10):
-        word_freq.append(docs[i].count(word))
-    term_freq.append(word_freq)
+    doc_freq = []
+    for i in range(len(docs)):
+        doc_freq.append(docs[i].count(word))
+    term_freq.append(doc_freq)
     query_freq.append(query.count(word))
 
-A = np.array(term_freq)
-aT = A.transpose()
-aTA = np.dot(aT, A)
-W, V = linAlgs.eig(aTA)
-print(W)
-S = []
-for i in range(len(W)):
-    row = [0]*10
-    row[i] = W[i]
-    S.append(row)
-
-S = np.array(S)
-vT = V.transpose()
-AV = np.dot(A, V)
-
-sI = linAlgs.inv(S)
-U = np.dot(AV, sI)
-
-U2 = U[:, :-1]
-S2 = S[:-1, :-1]
-
-s2I = linAlgs.inv(S2)
-V2 = V[:,:-1]
-v2T = V2.transpose()
-
-query_freq = np.array(query_freq)
-query_freq = np.dot(query_freq.transpose(), U2)
-query_freq = np.dot(query_freq, s2I)
-
-print(query_freq)
-print(v2T)
-
+U, S, V = SVD(term_freq) # use the SVD function created in svd.py
+# dimension approximation
+# for k - dimension approximation change 2 to k
+# for 2 - dimension approximation
+k = 2
+Uk = U[:, 0:k] # first two coloumns of U and all rows
+Sk = S[0:k, 0:k] # sub matrix with first two columns and rows
+Vk = V[:, 0:k] # first two columns of V and all rows each row is the vector of doc(i)
+SkI = linAlgs.inv(Sk)
+Q = np.array(query_freq)
+Q = np.dot(Q.transpose(), Uk)
+Q = np.dot(Q, SkI)
+print(Q)
+print(Vk)
