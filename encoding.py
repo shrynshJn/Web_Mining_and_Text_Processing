@@ -75,6 +75,4 @@ def golomb_decoding(golomb, b):
     else:
         r = bin2dec(golomb[q + 1:]) - d
     return q*b + r
-for i in range(1, 11):
-    print(golomb_decoding(golomb_encoding(i, 3),3), golomb_decoding(golomb_encoding(i, 10),10))
     
