@@ -1,0 +1,2 @@
+Environmental costs
+The blockchain mainstreams encryption and relies on it to provide security and to establish a consensus over a distributed ledger

@@ -1,0 +1,2 @@
+The unavoidable security flaw
+Even though blockchain is more secure against crackers, there is one avoidable security flaw
